@@ -1,0 +1,59 @@
+[v-cloak]{
+    display:none;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font: 15px/1.3 'Open Sans',sans-serif;
+    color: #5e5b64;
+    text-align: center;
+}
+form{
+    margin: 50px auto;
+    padding: 35px 60px;
+    width: 400px;
+    background-color: #61a1bc; 
+    border-radius: 2px;
+    box-shadow: 0 1px 1px #ccc;
+}
+form h1{
+    color: #ffffff;
+    font-size: 64px;
+    font-family: 'Cookie',cursive;
+    font-weight: normal;
+    text-shadow: 0 1px 1px #ccc;
+}
+form ul{
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: #ffffff;
+    margin: 20px 0 15px;
+}
+form ul li{
+    padding:20px 15px;
+    margin-bottom: 8px;
+    background-color: #e35885;
+    text-shadow: 0 1px 1px #ccc;
+    cursor: pointer;
+}
+form ul li.active{
+    background-color: #8ec16d;
+}
+form ul li span{
+    float: right;
+}
+.total{
+    padding: 15px 30px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    border-top: 1px solid #ffffff;
+}
+.total span{
+    float: right;
+}

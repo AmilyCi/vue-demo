@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="nav.css">
+        <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <nav v-bind:class='active' v-on:click.prvent>
+                <a href="#" class='home' v-on:click="makeActives('home')">home</a>
+                <a href="#" class='projects' v-on:click="makeActives('projects')">projects</a>
+                <a href="#" class='services' v-on:click="makeActives('services')">services</a>
+                <a href="#" class='contact' v-on:click="makeActives('contact')">contact</a>
+            </nav>
+            <p>您选择的是：<b>{{active}}菜单</b></p>
+        </div>
+
+        <script src="nav.js"></script>
+    </body>
+</html>
