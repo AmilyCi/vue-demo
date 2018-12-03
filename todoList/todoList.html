@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang='en'> 
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+    </head>
+    <body>
+       <div id="todoList">
+            <form v-on:submit.prevent="addNewTodo">
+                <label for="add-todo">add todo</label>
+                <input id="add-to"
+                       v-model="todoText" 
+                       placeholder="add a new todo item">       
+                <button>Add</button>
+            </form>
+            <ul>
+                <li is="todoItem"
+                    v-for="(todo,index) in todos"
+                    v-bind:title=todo.title
+                    v-bind:key=todo.id
+                    v-on:remove="todos.splice(index,1)">
+
+                </li>
+            </ul>
+       </div>
+    <script src="todoList.js"></script>
+    </body>
+</html>
